@@ -1,15 +1,31 @@
-var inquirer = require('inquirer');
+const inquirer = require('inquirer');
+
+//  Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 inquirer
   .prompt([
     /* Pass your questions in here */
+    {
+        type: "input",
+        message:"What's your project title?",
+        name: "title"
+    },
+    {
+        type: "input",
+        message:"Please describe your project",
+        name: "description"
+    },
+    {
+        type: "input",
+        message:"Please describe your project",
+        name: "description"
+    },
+ 
+
   ])
   .then(answers => {
     // Use user feedback for... whatever!!
+    console.log(answers);
   })
   .catch(error => {
-    if(error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else when wrong
-    }
+    console.log("error: "+error);
   });
