@@ -2,7 +2,6 @@ const inquirer = require('inquirer');
 const axios = require("axios");
 const fs = require('fs');
 
-//  Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 inquirer
   .prompt([
     /* Pass your questions in here */
@@ -20,6 +19,26 @@ inquirer
         type: "input",
         message:"What's your table of contents?",
         name: "tableOfContents"
+    },
+    {
+        type: "input",
+        message:"What are your installation?",
+        name: "installation"
+    },
+    {
+        type: "input",
+        message:"What's the usage for the project?",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message:"What are your licenses?",
+        name: "license"
+    },
+    {
+        type: "input",
+        message:"Who has contribute to the project?",
+        name: "contributers"
     },
     {
         type: "input",
