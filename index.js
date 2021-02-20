@@ -56,6 +56,13 @@ inquirer
 
         const readme = `
         # ${answers.title}
+        # ${answers.description}
+        # ${answers.tableOfContents}
+        # ${answers.installation}
+        # ${answers.usage}
+        # ${answers.license}
+        # ${answers.contributers}
+        # ${response.html_url}
         
         `;
 
