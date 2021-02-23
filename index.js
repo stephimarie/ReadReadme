@@ -54,15 +54,15 @@ inquirer
     axios.get(`https://api.github.com/users/${answers.username}`).then( function(response) {
         console.log(response);
 
-        const readme = `
-        # ${answers.title}
-        # ${answers.description}
-        # ${answers.tableOfContents}
-        # ${answers.installation}
-        # ${answers.usage}
-        # ${answers.license}
-        # ${answers.contributers}
-        # ${response.html_url}
+            const readme = `
+    # ${answers.title}
+    # ${answers.description}
+    # ${answers.tableOfContents}
+    # ${answers.installation}
+    # ${answers.usage}
+    # ${answers.license}
+    # ${answers.contributers}
+    # ${response.data.html_url}
         
         `;
 
