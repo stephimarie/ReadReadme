@@ -4,7 +4,6 @@ const fs = require('fs');
 
 inquirer
   .prompt([
-    /* Pass your questions in here */
     {
         type: "input",
         message:"What's your project title?",
